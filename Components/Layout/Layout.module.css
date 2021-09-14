@@ -1,0 +1,13 @@
+.slider {
+   display: flex;
+   align-items: center;
+}
+
+.slider_brand {
+   display: flex;
+   align-items: center;
+}
+
+.divider {
+   background-color: #999;
+}
