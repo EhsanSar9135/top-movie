@@ -1,6 +1,7 @@
 .slider {
    display: flex;
    align-items: center;
+   flex: 1;
 }
 
 .slider_brand {
@@ -8,6 +9,16 @@
    align-items: center;
 }
 
+.slider_brand .image {
+   object-fit: contain;
+}
+
 .divider {
    background-color: #999;
+   width: 0.1rem;
+   height: 1rem;
+}
+
+.auth_btn {
+   margin-left: auto;
 }

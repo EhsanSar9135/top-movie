@@ -9,7 +9,7 @@ const Slider = () => {
    return (
       <>
          <Swiper
-            className={classes.slider}
+            className={classes.poster_slider}
             navigation
             pagination={{ clickable: true }}
          >
