@@ -16,7 +16,7 @@ const Slider = () => {
             <SwiperSlide>
                <Image
                   className={classes.img_slider}
-                  src="/Assets/Slider/slider_1.png"
+                  src="/Assets/Images/Slider/slider_1.png"
                   alt="slide-1"
                   layout="fill"
                />
@@ -27,7 +27,7 @@ const Slider = () => {
             <SwiperSlide>
                <Image
                   className={classes.img_slider}
-                  src="/Assets/Slider/slider_2.png"
+                  src="/Assets/Images/Slider/slider_2.png"
                   alt="slide-2"
                   layout="fill"
                />
@@ -38,7 +38,7 @@ const Slider = () => {
             <SwiperSlide>
                <Image
                   className={classes.img_slider}
-                  src="/Assets/Slider/slider_3.jpg"
+                  src="/Assets/Images/Slider/slider_3.jpg"
                   alt="slide-3"
                   layout="fill"
                />
@@ -49,7 +49,7 @@ const Slider = () => {
             <SwiperSlide>
                <Image
                   className={classes.img_slider}
-                  src="/Assets/Slider/slider_4.jpg"
+                  src="/Assets/Images/Slider/slider_4.jpg"
                   alt="slide-4"
                   layout="fill"
                />

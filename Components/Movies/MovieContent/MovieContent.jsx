@@ -6,7 +6,7 @@ const MovieContent = ({ movieName }) => {
       <Card
          cover={
             <Image
-               src={`/Assets/Movies/slider_1.jpg`}
+               src={`/Assets/Images/Movies/slider_1.jpg`}
                alt={movieName}
                width={100}
                height={400}
