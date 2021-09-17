@@ -32,9 +32,11 @@ const Layout = ({ children }) => {
                   </Nav.Link>
                </Link>
             </Nav>
-            <Button variant="light" className={classes.auth_btn}>
-               Login
-            </Button>
+            <Link href="/Auth" passHref={true}>
+               <Button variant="light" className={classes.auth_btn}>
+                  Login
+               </Button>
+            </Link>
          </Navbar>
          <div>{children}</div>
       </>
