@@ -5,9 +5,9 @@ const MovieDetails = () => {
    return (
       <Card className="mt-5">
          <Divider>Details</Divider>
-         <Row>
+         <Row className="mb-3">
             <Col xs={1} sm={1} md={1} lg={1} xl={1}>
-               <Tag>
+               <Tag className="rounded-pill">
                   <Avatar
                      size={32}
                      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
