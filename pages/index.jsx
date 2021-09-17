@@ -1,3 +1,4 @@
+import { Divider } from "antd";
 import Head from "next/head";
 import MovieSlider from "../Components/Movie_Slider/MovieSlider";
 import Slider from "../Components/Poster_Slider/Slider";
@@ -12,6 +13,7 @@ const Home = () => {
          </Head>
          <div>
             <Slider />
+            <Divider orientation="center">Top Movies</Divider>
             <MovieSlider />
          </div>
       </>

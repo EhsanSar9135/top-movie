@@ -1,6 +1,6 @@
 import { Nav, Navbar, Button } from "react-bootstrap";
 import Image from "next/image";
-import Logo from "../../public/Assets/video-player.png";
+import Logo from "../../public/Assets/Images/video-player.png";
 import classes from "./Layout.module.css";
 import { Divider } from "antd";
 import { useRouter } from "next/dist/client/router";
