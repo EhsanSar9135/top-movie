@@ -2,6 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import Image from "next/image";
 import classes from "./Slider.module.css";
+import { Button } from "react-bootstrap";
+import classNames from "classnames";
+import Link from "next/link";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -20,42 +23,19 @@ const Slider = () => {
                   alt="slide-1"
                   layout="fill"
                />
-               <span className={classes.text_img_slider}>
-                  Slider Text Number 1
-               </span>
-            </SwiperSlide>
-            <SwiperSlide>
-               <Image
-                  className={classes.img_slider}
-                  src="/Assets/Images/Slider/slider_2.png"
-                  alt="slide-2"
-                  layout="fill"
-               />
-               <span className={classes.text_img_slider}>
-                  Slider Text Number 2
-               </span>
-            </SwiperSlide>
-            <SwiperSlide>
-               <Image
-                  className={classes.img_slider}
-                  src="/Assets/Images/Slider/slider_3.jpg"
-                  alt="slide-3"
-                  layout="fill"
-               />
-               <span className={classes.text_img_slider}>
-                  Slider Text Number 3
-               </span>
-            </SwiperSlide>
-            <SwiperSlide>
-               <Image
-                  className={classes.img_slider}
-                  src="/Assets/Images/Slider/slider_4.jpg"
-                  alt="slide-4"
-                  layout="fill"
-               />
-               <span className={classes.text_img_slider}>
-                  Slider Text Number 4
-               </span>
+               <div
+                  className={classNames(classes.text_img_slider, "text-center")}
+               >
+                  <h2 className="text-white">Title</h2>
+                  <p>Description</p>
+                  <Link
+                     href="/Movies/[slug]"
+                     as="/Movies/movie-1"
+                     passHref={true}
+                  >
+                     <Button variant="success">Watch</Button>
+                  </Link>
+               </div>
             </SwiperSlide>
          </Swiper>
       </>

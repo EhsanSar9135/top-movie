@@ -1,11 +1,12 @@
 import { Divider, Dropdown, Menu, Slider } from "antd";
 import { useRef, useState } from "react";
-import { Card, ProgressBar } from "react-bootstrap";
+import { Button, Card, ProgressBar } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import styles from "./VideoPlayer.module.css";
 import classnames from "classnames";
 import screenfull from "screenfull";
 import Image from "next/image";
+import { useRouter } from "next/dist/client/router";
 
 const VideoPlayer = () => {
    const [playing, setPlaying] = useState(false);
@@ -17,6 +18,7 @@ const VideoPlayer = () => {
 
    const ref = useRef();
    const fullscreenRef = useRef();
+   const router = useRouter();
 
    const handlePlaying = (status) => {
       setPlaying(status);
@@ -68,6 +70,13 @@ const VideoPlayer = () => {
 
    return (
       <div ref={fullscreenRef}>
+         <Button
+            variant="dark"
+            onClick={() => router.back()}
+            className={styles.return_btn}
+         >
+            Return to Movie
+         </Button>
          <ReactPlayer
             ref={ref}
             className={styles.player}
