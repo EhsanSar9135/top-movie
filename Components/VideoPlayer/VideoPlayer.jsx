@@ -72,7 +72,7 @@ const VideoPlayer = () => {
             ref={ref}
             className={styles.player}
             url="/Assets/Videos/trailer.mp4"
-            width="100%"
+            width="90vw"
             height="100vh"
             playing={playing}
             onProgress={({ played, playedSeconds, loaded, loadedSeconds }) => {
@@ -119,7 +119,6 @@ const VideoPlayer = () => {
                   onClick={() => setShow(true)}
                >
                   <Image
-                     className="ml-3"
                      width={32}
                      height={32}
                      src={"/Assets/speedrating.svg"}
@@ -132,7 +131,6 @@ const VideoPlayer = () => {
                   onClick={() => setShow(true)}
                >
                   <Image
-                     className="ml-3"
                      width={32}
                      height={32}
                      src={
@@ -141,16 +139,17 @@ const VideoPlayer = () => {
                      alt="volume"
                   />
                </Dropdown>
-               <Image
-                  src={"/Assets/fullscreen.svg"}
-                  width={32}
-                  height={32}
-                  className="ml-3"
-                  onClick={() => {
-                     screenfull.toggle(fullscreenRef.current);
-                  }}
-                  alt="fullscreen"
-               />
+               <Dropdown>
+                  <Image
+                     src={"/Assets/fullscreen.svg"}
+                     width={32}
+                     height={32}
+                     onClick={() => {
+                        screenfull.toggle(fullscreenRef.current);
+                     }}
+                     alt="fullscreen"
+                  />
+               </Dropdown>
             </div>
          </Card>
       </div>
