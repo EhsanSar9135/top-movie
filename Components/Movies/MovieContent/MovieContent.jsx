@@ -21,11 +21,25 @@ const MovieContent = ({ movieName }) => {
                >
                   <h2 className="text-white">Title</h2>
                   <div className="mb-3">
-                     <span>IMDb Score : 6.7</span>
+                     <span>
+                        <img className="mr-1" src="/Assets/imdb.svg" alt="imdb" width={32} />
+                        6.7
+                     </span>
                      <Divider className="bg-white" type="vertical" />
-                     <span>Duration : 117 minute</span>
+                     <span>
+                        <img className="mr-1" src="/Assets/clock.svg" alt="clock" width={20} />
+                        117 minutes
+                     </span>
                      <Divider className="bg-white" type="vertical" />
-                     <span>Date of Release : 2021</span>
+                     <span>
+                        <img
+                         className="mr-1"
+                           src="/Assets/calendar.svg"
+                           alt="calendar"
+                           width={20}
+                        />
+                        2021
+                     </span>
                   </div>
                   <Link
                      href="/Movies/Player/[id]"

@@ -1,0 +1,15 @@
+.text_img_slider {
+   position: absolute;
+   left: 70px;
+   bottom: 10px;
+   color: #fff;
+   opacity: 0;
+}
+
+.banner_hover {
+   filter: brightness(0.25);
+}
+
+.text_img_slider_hover {
+   opacity: 1;
+}

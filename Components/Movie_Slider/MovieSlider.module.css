@@ -9,5 +9,13 @@
 }
 
 .img_shadow:hover {
-   box-shadow: 5px -5px #555;
+   box-shadow: 5px -5px #333;
+}
+
+.img_shadow_dark:hover {
+   box-shadow: 5px -5px #666;
+}
+
+.bg_black {
+   background-color: #343a40;
 }
